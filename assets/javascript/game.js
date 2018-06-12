@@ -8,6 +8,8 @@ var numberGuess = Math.floor(Math.random() * (maxNumber - minNumber + 1) + minNu
 $("#numberGuess").html(numberGuess);
 
 var yourNumber = 0;
+$("#yournumber").html(yourNumber);
+
 var gemMin = 1;
 var gemMax = 12;
 var pink = Math.floor(Math.random() * (gemMax - gemMin + 1) + gemMin);
@@ -30,46 +32,229 @@ while (pink === green && purple === green && blue === green);
 
 
 $("#pink").click(function(){
-    alert(pink);
+    
     yourNumber += pink;
     $("#yournumber").html(yourNumber);
+    if (numberGuess === yourNumber) {
+   
+        wins++; 
+        $("#wins").html(wins);
+        alert("You Win!");
+        numberGuess = Math.floor(Math.random() * (maxNumber - minNumber + 1) + minNumber);
+        $("#numberGuess").html(numberGuess);
+        yourNumber = 0;
+        $("#yournumber").html(yourNumber);
+        pink = Math.floor(Math.random() * (gemMax - gemMin + 1) + gemMin);
+        purple = Math.floor(Math.random() * (gemMax - gemMin + 1) + gemMin);
+        blue = Math.floor(Math.random() * (gemMax - gemMin + 1) + gemMin);
+        green = Math.floor(Math.random() * (gemMax - gemMin + 1) + gemMin);
+        do {Math.floor(Math.random() * (gemMax - gemMin + 1) + gemMin);
+        }
+        while (pink === purple);
+        do {Math.floor(Math.random() * (gemMax - gemMin + 1) + gemMin);
+        }
+        while (purple === blue || pink === blue);
+        do {Math.floor(Math.random() * (gemMax - gemMin + 1) + gemMin);
+        }
+        while (pink === green && purple === green && blue === green);
+     }
+    else if (numberGuess < yourNumber) {
+        losses++;
+        $("#losses").html(losses);
+        alert("You Lose");
+        numberGuess = Math.floor(Math.random() * (maxNumber - minNumber + 1) + minNumber);
+        $("#numberGuess").html(numberGuess);
+        yourNumber = 0;
+        $("#yournumber").html(yourNumber);
+        pink = Math.floor(Math.random() * (gemMax - gemMin + 1) + gemMin);
+        purple = Math.floor(Math.random() * (gemMax - gemMin + 1) + gemMin);
+        blue = Math.floor(Math.random() * (gemMax - gemMin + 1) + gemMin);
+        green = Math.floor(Math.random() * (gemMax - gemMin + 1) + gemMin);
+        do {Math.floor(Math.random() * (gemMax - gemMin + 1) + gemMin);
+        }
+        while (pink === purple);
+        do {Math.floor(Math.random() * (gemMax - gemMin + 1) + gemMin);
+        }
+        while (purple === blue || pink === blue);
+        do {Math.floor(Math.random() * (gemMax - gemMin + 1) + gemMin);
+        }
+        while (pink === green && purple === green && blue === green);
+    }
+    else {
+    $("#wins").html(wins);
+    $("#losses").html(losses);
+    }
 });
 
 $("#purple").click(function(){
-    alert(purple);
+    
     yourNumber += purple;
     $("#yournumber").html(yourNumber);
+    if (numberGuess === yourNumber) {
+   
+        wins++; 
+        $("#wins").html(wins);
+        alert("You Win!");
+        numberGuess = Math.floor(Math.random() * (maxNumber - minNumber + 1) + minNumber);
+        $("#numberGuess").html(numberGuess);
+        yourNumber = 0;
+        $("#yournumber").html(yourNumber);
+        pink = Math.floor(Math.random() * (gemMax - gemMin + 1) + gemMin);
+        purple = Math.floor(Math.random() * (gemMax - gemMin + 1) + gemMin);
+        blue = Math.floor(Math.random() * (gemMax - gemMin + 1) + gemMin);
+        green = Math.floor(Math.random() * (gemMax - gemMin + 1) + gemMin);
+        do {Math.floor(Math.random() * (gemMax - gemMin + 1) + gemMin);
+        }
+        while (pink === purple);
+        do {Math.floor(Math.random() * (gemMax - gemMin + 1) + gemMin);
+        }
+        while (purple === blue || pink === blue);
+        do {Math.floor(Math.random() * (gemMax - gemMin + 1) + gemMin);
+        }
+        while (pink === green && purple === green && blue === green);
+    
+     }
+    else if (numberGuess < yourNumber) {
+        losses++;
+        $("#losses").html(losses);
+        alert("You Lose");
+        numberGuess = Math.floor(Math.random() * (maxNumber - minNumber + 1) + minNumber);
+        $("#numberGuess").html(numberGuess);
+        yourNumber = 0;
+        $("#yournumber").html(yourNumber);
+        pink = Math.floor(Math.random() * (gemMax - gemMin + 1) + gemMin);
+        purple = Math.floor(Math.random() * (gemMax - gemMin + 1) + gemMin);
+        blue = Math.floor(Math.random() * (gemMax - gemMin + 1) + gemMin);
+        green = Math.floor(Math.random() * (gemMax - gemMin + 1) + gemMin);
+        do {Math.floor(Math.random() * (gemMax - gemMin + 1) + gemMin);
+        }
+        while (pink === purple);
+        do {Math.floor(Math.random() * (gemMax - gemMin + 1) + gemMin);
+        }
+        while (purple === blue || pink === blue);
+        do {Math.floor(Math.random() * (gemMax - gemMin + 1) + gemMin);
+        }
+        while (pink === green && purple === green && blue === green);
+    }
+    else {
+    $("#wins").html(wins);
+    $("#losses").html(losses);
+    }
 });
 
 $("#blue").click(function(){
-    alert(blue);
+    
     yourNumber += blue;
     $("#yournumber").html(yourNumber);
+    if (numberGuess === yourNumber) {
+   
+        wins++; 
+        $("#wins").html(wins);
+        alert("You Win!");
+        numberGuess = Math.floor(Math.random() * (maxNumber - minNumber + 1) + minNumber);
+        $("#numberGuess").html(numberGuess);
+        yourNumber = 0;
+        $("#yournumber").html(yourNumber);
+        pink = Math.floor(Math.random() * (gemMax - gemMin + 1) + gemMin);
+        purple = Math.floor(Math.random() * (gemMax - gemMin + 1) + gemMin);
+        blue = Math.floor(Math.random() * (gemMax - gemMin + 1) + gemMin);
+        green = Math.floor(Math.random() * (gemMax - gemMin + 1) + gemMin);
+        do {Math.floor(Math.random() * (gemMax - gemMin + 1) + gemMin);
+        }
+        while (pink === purple);
+        do {Math.floor(Math.random() * (gemMax - gemMin + 1) + gemMin);
+        }
+        while (purple === blue || pink === blue);
+        do {Math.floor(Math.random() * (gemMax - gemMin + 1) + gemMin);
+        }
+        while (pink === green && purple === green && blue === green);
+    
+     }
+    else if (numberGuess < yourNumber) {
+        losses++;
+        $("#losses").html(losses);
+        alert("You Lose");
+        numberGuess = Math.floor(Math.random() * (maxNumber - minNumber + 1) + minNumber);
+        $("#numberGuess").html(numberGuess);
+        yourNumber = 0;
+        $("#yournumber").html(yourNumber);
+        pink = Math.floor(Math.random() * (gemMax - gemMin + 1) + gemMin);
+        purple = Math.floor(Math.random() * (gemMax - gemMin + 1) + gemMin);
+        blue = Math.floor(Math.random() * (gemMax - gemMin + 1) + gemMin);
+        green = Math.floor(Math.random() * (gemMax - gemMin + 1) + gemMin);
+        do {Math.floor(Math.random() * (gemMax - gemMin + 1) + gemMin);
+        }
+        while (pink === purple);
+        do {Math.floor(Math.random() * (gemMax - gemMin + 1) + gemMin);
+        }
+        while (purple === blue || pink === blue);
+        do {Math.floor(Math.random() * (gemMax - gemMin + 1) + gemMin);
+        }
+        while (pink === green && purple === green && blue === green);
+    }
+    else {
+    $("#wins").html(wins);
+    $("#losses").html(losses);
+    }
 });
 
 $("#green").click(function(){
-    alert(green);
+    
     yourNumber += green;
     $("#yournumber").html(yourNumber);
-});
-if (yourNumber === numberGuess) {
-    wins++; 
-    $("#wins").html(wins);
-    alert("You Win!");
-    numberGuess = Math.floor(Math.random() * (maxNumber - minNumber + 1) + minNumber);
-    $("#numberGuess").html(numberGuess);
+    if (numberGuess === yourNumber) {
+   
+        wins++; 
+        $("#wins").html(wins);
+        alert("You Win!");
+        numberGuess = Math.floor(Math.random() * (maxNumber - minNumber + 1) + minNumber);
+        $("#numberGuess").html(numberGuess);
+        yourNumber = 0;
+        $("#yournumber").html(yourNumber);
+        pink = Math.floor(Math.random() * (gemMax - gemMin + 1) + gemMin);
+        purple = Math.floor(Math.random() * (gemMax - gemMin + 1) + gemMin);
+        blue = Math.floor(Math.random() * (gemMax - gemMin + 1) + gemMin);
+        green = Math.floor(Math.random() * (gemMax - gemMin + 1) + gemMin);
+        do {Math.floor(Math.random() * (gemMax - gemMin + 1) + gemMin);
+        }
+        while (pink === purple);
+        do {Math.floor(Math.random() * (gemMax - gemMin + 1) + gemMin);
+        }
+        while (purple === blue || pink === blue);
+        do {Math.floor(Math.random() * (gemMax - gemMin + 1) + gemMin);
+        }
+        while (pink === green && purple === green && blue === green);
 
- }
-else if (yourNumber > numberGuess) {
-    losses++;
+    
+     }
+    else if (numberGuess < yourNumber) {
+        losses++;
+        $("#losses").html(losses);
+        alert("You Lose");
+        numberGuess = Math.floor(Math.random() * (maxNumber - minNumber + 1) + minNumber);
+        $("#numberGuess").html(numberGuess);
+        yourNumber = 0;
+        $("#yournumber").html(yourNumber);
+        pink = Math.floor(Math.random() * (gemMax - gemMin + 1) + gemMin);
+        purple = Math.floor(Math.random() * (gemMax - gemMin + 1) + gemMin);
+        blue = Math.floor(Math.random() * (gemMax - gemMin + 1) + gemMin);
+        green = Math.floor(Math.random() * (gemMax - gemMin + 1) + gemMin);
+        do {Math.floor(Math.random() * (gemMax - gemMin + 1) + gemMin);
+        }
+        while (pink === purple);
+        do {Math.floor(Math.random() * (gemMax - gemMin + 1) + gemMin);
+        }
+        while (purple === blue || pink === blue);
+        do {Math.floor(Math.random() * (gemMax - gemMin + 1) + gemMin);
+        }
+        while (pink === green && purple === green && blue === green);
+    }
+    else {
+    $("#wins").html(wins);
     $("#losses").html(losses);
-    alert("You Lose");
-    numberGuess = Math.floor(Math.random() * (maxNumber - minNumber + 1) + minNumber);
-    $("#numberGuess").html(numberGuess);
-}
-else {
-$("#wins").html(wins);
-$("#losses").html(losses);
-}
+    }
+});
+
+
 
 });
